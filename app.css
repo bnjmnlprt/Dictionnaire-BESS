@@ -1,0 +1,86 @@
+/* Réinitialisation de base et police globale */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f5;
+}
+
+/* Conteneur principal de l'application */
+.app-container {
+  display: flex; /* La magie opère ici : aligne les enfants côte à côte */
+  height: 100vh; /* Prend toute la hauteur de l'écran */
+}
+
+/* Colonne de gauche (sidebar) */
+.sidebar {
+  width: 350px; /* Largeur fixe pour la liste */
+  flex-shrink: 0; /* Empêche la colonne de rétrécir */
+  border-right: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column; /* Organise le header et la liste verticalement */
+  height: 100vh;
+}
+
+.sidebar-header {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sidebar-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.sidebar-header input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  box-sizing: border-box; /* Assure que le padding n'augmente pas la largeur */
+}
+
+/* La liste des termes, la rend défilable */
+.term-list {
+  flex-grow: 1; /* Prend tout l'espace vertical restant */
+  overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+}
+
+.term-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.term-list button {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #e2e8f0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.term-list button:hover {
+  background-color: #f8fafc;
+}
+
+/* Style pour le bouton du terme sélectionné */
+.term-list button.selected {
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+/* Colonne de droite (contenu principal) */
+.main-content {
+  flex-grow: 1; /* Prend tout l'espace horizontal restant */
+  padding: 2rem;
+  overflow-y: auto; /* Ajoute une barre de défilement si le contenu est trop long */
+}
