@@ -1,0 +1,242 @@
+[
+  {
+    "id": "agregation",
+    "terme": "Agrégation",
+    "definition_sommaire": "Regrouper plusieurs sites (production, consommation) pour les valoriser comme une seule entité sur les marchés.",
+    "analyse_detaillee": "L'agrégation mutualise la capacité d'actifs décentralisés (PV, BESS, effacement) pour atteindre la taille critique nécessaire pour accéder aux marchés de l'énergie (Spot, capacité, services système)."
+  },
+  {
+    "id": "ao-cre",
+    "terme": "AO CRE (Appel d'Offres CRE)",
+    "definition_sommaire": "Procédure concurrentielle menée par la CRE pour attribuer un soutien public à des projets d'énergies renouvelables.",
+    "analyse_detaillee": "Les développeurs soumettent des offres pour leurs projets, qui sont sélectionnées sur la base de critères définis (prix, bilan carbone, etc.). Les lauréats bénéficient d'un contrat de Complément de Rémunération sur 20 ans."
+  },
+  {
+    "id": "aos",
+    "terme": "AOS (Appel d'Offres Simplifié)",
+    "definition_sommaire": "Appel d'offres spécifique pour les projets PV sur bâtiments et ombrières entre 100 et 500 kWc.",
+    "analyse_detaillee": "Successeur du guichet S21, l'AOS est une procédure concurrentielle basée uniquement sur le critère du prix. Les lauréats obtiennent un contrat de Complément de Rémunération."
+  },
+  {
+    "id": "bancabilite",
+    "terme": "Bancabilité",
+    "definition_sommaire": "Qualité d'un projet jugé suffisamment robuste et prévisible pour être financé par une banque.",
+    "analyse_detaillee": "Un projet est \"bancable\" si ses risques (techniques, réglementaires, de marché) sont maîtrisés et si ses flux de revenus futurs sont jugés stables et suffisants pour rembourser la dette. Les contrats à long terme (PPA, OA) améliorent la bancabilité."
+  },
+  {
+    "id": "bess",
+    "terme": "BESS (Battery Energy Storage System)",
+    "definition_sommaire": "Système de stockage d'énergie par batteries.",
+    "analyse_detaillee": "Un BESS est composé de batteries (généralement Lithium-ion), d'un onduleur/chargeur (PCS) et d'un système de pilotage (EMS). Il permet de stocker l'électricité pour la restituer plus tard."
+  },
+  {
+    "id": "btm",
+    "terme": "BTM (Behind-the-Meter)",
+    "definition_sommaire": "Désigne les actifs énergétiques (production, stockage) situés \"derrière le compteur\" d'un site de consommation.",
+    "analyse_detaillee": "Un actif BTM est directement connecté au réseau interne du client. Sa valorisation principale vient de l'optimisation de la facture énergétique du site (augmentation de l'autoconsommation, écrêtage de pointe...)."
+  },
+  {
+    "id": "c-rate",
+    "terme": "C-Rate",
+    "definition_sommaire": "Ratio indiquant la vitesse de charge ou de décharge d'une batterie par rapport à sa capacité.",
+    "analyse_detaillee": "Un C-Rate de 1C signifie qu'une batterie peut se charger ou se décharger complètement en 1 heure. Un C-Rate de 2C signifie une décharge en 30 minutes. Un C-Rate de 0.5C (ou C/2) signifie une décharge en 2 heures."
+  },
+  {
+    "id": "capex",
+    "terme": "CAPEX (Capital Expenditure)",
+    "definition_sommaire": "Dépenses d'investissement initiales pour la construction d'un projet.",
+    "analyse_detaillee": "Le CAPEX comprend tous les coûts liés à l'acquisition des équipements (modules PV, batteries, onduleurs) et à la construction de la centrale (ingénierie, installation, raccordement)."
+  },
+  {
+    "id": "card-i",
+    "terme": "CARD-I (Contrat d'Accès au Réseau de Distribution pour une Installation)",
+    "definition_sommaire": "Contrat signé avec Enedis qui définit les conditions techniques et financières de l'accès au réseau pour un producteur.",
+    "analyse_detaillee": "Le CARD-I est le contrat qui matérialise le droit d'injecter de l'électricité sur le réseau de distribution. Il précise le point de raccordement, la puissance d'injection autorisée et les modalités de comptage."
+  },
+  {
+    "id": "complement-de-remuneration",
+    "terme": "Complément de Rémunération (CR)",
+    "definition_sommaire": "Mécanisme de soutien où le producteur vend son énergie sur le marché et reçoit une prime de l'État.",
+    "analyse_detaillee": "Le producteur est exposé aux prix du marché Spot. Si le prix de marché moyen (M0) est inférieur à un tarif de référence (T) obtenu lors d'un appel d'offres, l'État verse une prime (T-MO). Si le prix de marché est supérieur, le producteur rembourse l'excédent (MO - T)."
+  },
+  {
+    "id": "courbe-de-charge",
+    "terme": "Courbe de charge",
+    "definition_sommaire": "Représentation graphique de la puissance électrique consommée par un site sur une période donnée.",
+    "analyse_detaillee": "La courbe de charge, généralement mesurée à un pas de temps de 10 ou 30 minutes, est l'empreinte digitale de la consommation d'un site. Elle montre les pics, les creux et les schémas de consommation."
+  },
+  {
+    "id": "cre",
+    "terme": "CRE (Commission de Régulation de l'Énergie)",
+    "definition_sommaire": "Autorité administrative indépendante chargée de veiller au bon fonctionnement des marchés de l'énergie en France.",
+    "analyse_detaillee": "La CRE a de nombreuses missions, dont la définition des tarifs d'accès aux réseaux (TURPE), la surveillance des marchés de gros et de détail, et l'organisation des appels d'offres pour les énergies renouvelables."
+  },
+  {
+    "id": "dod",
+    "terme": "DoD (Depth of Discharge)",
+    "definition_sommaire": "Profondeur de décharge. Pourcentage de la capacité totale d'une batterie qui a été déchargée.",
+    "analyse_detaillee": "Un DoD de 80% signifie que 80% de l'énergie stockée a été utilisée. Limiter le DoD maximal (par exemple, ne jamais décharger la batterie à plus de 90%) permet de prolonger sa durée de vie."
+  },
+  {
+    "id": "ecart",
+    "terme": "Écart (Positif / Négatif)",
+    "definition_sommaire": "Différence en temps réel entre la prévision d'injection/soutirage d'un RE et la mesure constatée.",
+    "analyse_detaillee": "Un écart positif signifie que le périmètre du RE a injecté plus (ou soutiré moins) que prévu, aidant ainsi le réseau. Un écart négatif signifie qu'il a injecté moins (ou soutiré plus) que prévu, pénalisant le réseau."
+  },
+  {
+    "id": "effacement-de-consommation",
+    "terme": "Effacement de Consommation",
+    "definition_sommaire": "Action de réduire temporairement et volontairement la consommation d'électricité pour soulager le réseau.",
+    "analyse_detaillee": "L'effacement est une alternative à l'augmentation de la production lors des pics de demande. Un site industriel peut, par exemple, décaler un processus non-critique. Cette flexibilité est une ressource qui peut être valorisée sur plusieurs marchés, notamment le Mécanisme de Capacité et le Mécanisme d'Ajustement."
+  },
+  {
+    "id": "efficacite-aller-retour",
+    "terme": "Efficacité Aller-Retour",
+    "definition_sommaire": "Ratio entre l'énergie restituée par une batterie et l'énergie nécessaire pour la charger.",
+    "analyse_detaillee": "Aussi appelée \"Round-Trip Efficiency\". Une efficacité de 90% signifie que pour 100 kWh injectés dans la batterie, 90 kWh peuvent être restitués. Le reste est perdu, principalement sous forme de chaleur."
+  },
+  {
+    "id": "ems",
+    "terme": "EMS (Energy Management System)",
+    "definition_sommaire": "Système de pilotage intelligent qui gère les flux d'énergie d'une installation (PV, BESS, consommation du site).",
+    "analyse_detaillee": "L'EMS est le \"cerveau\" d'un projet BESS. C'est un logiciel qui, sur la base de prévisions (production PV, consommation, prix de marché) et d'algorithmes d'optimisation, décide en temps réel quand charger ou décharger la batterie pour maximiser les revenus ou les économies."
+  },
+  {
+    "id": "ftm",
+    "terme": "FTM (Front-of-the-Meter)",
+    "definition_sommaire": "Désigne les actifs énergétiques (généralement de grande taille) directement raccordés au réseau de transport ou de distribution.",
+    "analyse_detaillee": "Contrairement aux actifs BTM, un actif FTM n'est pas lié à un site de consommation spécifique. Sa seule finalité est d'interagir avec les marchés de l'énergie (arbitrage, services système...)."
+  },
+  {
+    "id": "garanties-d-origine",
+    "terme": "Garanties d'Origine (GO)",
+    "definition_sommaire": "Certificat électronique prouvant qu'un MWh d'électricité a été produit à partir d'une source d'énergie renouvelable.",
+    "analyse_detaillee": "Les GO sont le seul moyen de tracer la part d'électricité verte dans un mix de fourniture. Elles peuvent être vendues séparément de l'énergie physique."
+  },
+  {
+    "id": "icpe",
+    "terme": "ICPE (Installation Classée pour la Protection de l'Environnement)",
+    "definition_sommaire": "Nomenclature administrative qui soumet certaines installations (dont le stockage) à des régimes d'autorisation en fonction des risques.",
+    "analyse_detaillee": "En fonction de leur capacité et de leur technologie, les BESS peuvent être soumis à un régime de Déclaration, d'Enregistrement ou d'Autorisation environnementale. Chaque régime impose des contraintes techniques (sécurité incendie, etc.) et des délais d'instruction administratifs."
+  },
+  {
+    "id": "lcoe",
+    "terme": "LCOE (Levelized Cost of Energy)",
+    "definition_sommaire": "Coût actualisé de l'énergie. Coût total d'une centrale sur sa durée de vie, divisé par l'énergie totale produite.",
+    "analyse_detaillee": "Le LCOE (€/MWh) est un indicateur qui permet de comparer le coût de production de différentes technologies (PV, éolien, gaz...). Il intègre le CAPEX initial, l'OPEX, le coût du financement et la production sur toute la durée de vie de l'actif."
+  },
+  {
+    "id": "marche-spot",
+    "terme": "Marché Spot (EPEX Spot)",
+    "definition_sommaire": "Bourse européenne de l'électricité où s'échangent des blocs d'énergie pour une livraison le lendemain (Day-Ahead).",
+    "analyse_detaillee": "C'est le principal marché de gros de l'électricité où les prix sont fixés heure par heure. La volatilité de ces prix crée des opportunités d'arbitrage: acheter/charger quand le prix est bas, vendre/décharger quand il est haut."
+  },
+  {
+    "id": "mecanisme-de-capacite",
+    "terme": "Mécanisme de Capacité (MécaCapa)",
+    "definition_sommaire": "Marché rémunérant la disponibilité des moyens de production et d'effacement pendant les périodes de pointe hivernale.",
+    "analyse_detaillee": "Le MécaCapa vise à garantir la sécurité d'approvisionnement. Les producteurs et opérateurs d'effacement peuvent faire certifier leur puissance disponible par RTE, obtenant des \"garanties de capacité\". Les fournisseurs sont obligés d'acheter ces garanties pour couvrir la consommation de pointe de leurs clients."
+  },
+  {
+    "id": "obligation-d-achat",
+    "terme": "Obligation d'Achat (OA)",
+    "definition_sommaire": "Mécanisme de soutien où un acheteur obligé (historiquement EDF OA) achète l'intégralité de la production à un tarif fixe et régulé.",
+    "analyse_detaillee": "Ce modèle garantit un revenu prévisible et sans risque de marché. Il était appliqué via le guichet S21 pour les installations de 100 à 500 kWc, maintenant remplacé par l'AOS en CR."
+  },
+  {
+    "id": "opex",
+    "terme": "OPEX (Operational Expenditure)",
+    "definition_sommaire": "Dépenses d'exploitation récurrentes nécessaires au fonctionnement d'une centrale.",
+    "analyse_detaillee": "L'OPEX comprend les coûts de maintenance, d'assurance, de supervision, les frais de gestion, les taxes foncières, etc."
+  },
+  {
+    "id": "pcs",
+    "terme": "PCS (Power Conversion System)",
+    "definition_sommaire": "Système de conversion de puissance. Onduleur/chargeur bidirectionnel d'un BESS.",
+    "analyse_detaillee": "Le PCS est l'équipement qui convertit le courant continu (DC) de la batterie en courant alternatif (AC) du réseau lors de la décharge, et inversement lors de la charge. Sa puissance (en kW ou MW) définit la puissance maximale de charge/décharge du BESS."
+  },
+  {
+    "id": "peak-shaving",
+    "terme": "Peak Shaving (Écrêtage de pointe)",
+    "definition_sommaire": "Action de décharger une batterie pour réduire les pics de consommation d'un site et éviter les dépassements de puissance souscrite.",
+    "analyse_detaillee": "Le peak shaving consiste à utiliser l'énergie de la batterie pour \"raboter\" les pointes de consommation du site. Cela permet de réduire la facture TURPE, notamment les pénalités de dépassement et potentiellement d'optimiser la puissance souscrite à la baisse."
+  },
+  {
+    "id": "ppa",
+    "terme": "PPA (Power Purchase Agreement)",
+    "definition_sommaire": "Contrat de vente d'électricité à long terme conclu directement entre un producteur et un consommateur final.",
+    "analyse_detaillee": "Un PPA permet à un consommateur de sécuriser son approvisionnement en électricité verte à un prix fixe ou indexé sur le long terme, et au producteur de sécuriser ses revenus, facilitant ainsi le financement de sa centrale (\"bancabilité\")."
+  },
+  {
+    "id": "pre",
+    "terme": "PRE+/PRE-",
+    "definition_sommaire": "Prix de Règlement des Écarts. Prix auquel RTE règle les écarts positifs (PRE+) et négatifs (PRE-).",
+    "analyse_detaillee": "Le PRE est le prix auquel RTE valorise les actions d'équilibrage en temps réel. Le PRE+ rémunère les acteurs qui ont aidé le réseau (écart positif). Le PRE- pénalise ceux qui ont mis le réseau en difficulté (écart négatif)."
+  },
+  {
+    "id": "ptf",
+    "terme": "PTF (Proposition Technique et Financière)",
+    "definition_sommaire": "Document émis par Enedis en réponse à une demande de raccordement, détaillant la solution technique et le coût.",
+    "analyse_detaillee": "La PTF est l'offre formelle du gestionnaire de réseau pour le raccordement d'un projet. Son acceptation par le producteur vaut contrat."
+  },
+  {
+    "id": "reserve-secondaire-afrr",
+    "terme": "Réserve Secondaire (aFRR)",
+    "definition_sommaire": "Automatic Frequency Restoration Reserve. Activation automatique en quelques minutes pour ramener la fréquence à 50 Hz.",
+    "analyse_detaillee": "L'aFRR est activée par un signal centralisé de RTE pour corriger l'équilibre production/consommation et ainsi restaurer la fréquence nominale, tout en relevant la réserve primaire. Elle est activée plus lentement que la FCR mais sur des durées plus longues."
+  },
+  {
+    "id": "reserve-primaire-fcr",
+    "terme": "Réserve Primaire (FCR)",
+    "definition_sommaire": "Frequency Containment Reserve. Activation automatique en quelques secondes pour stopper une déviation de fréquence.",
+    "analyse_detaillee": "La FCR est la première ligne de défense du réseau. Elle est activée automatiquement par les actifs participants dès qu'ils détectent une déviation de la fréquence. C'est un service qui rémunère principalement la disponibilité."
+  },
+  {
+    "id": "responsable-d-equilibre",
+    "terme": "Responsable d'Équilibre (RE)",
+    "definition_sommaire": "Acteur de marché, agréé par RTE, qui est financièrement responsable des écarts entre l'énergie prévue et l'énergie réellement injectée/soutirée par son périmètre.",
+    "analyse_detaillee": "Le RE s'engage auprès de RTE à prévoir la production et la consommation de son portefeuille d'actifs (son \"périmètre d'équilibre\"). Si ses prévisions sont fausses, il paie des pénalités (ou reçoit un gain) à RTE pour les écarts constatés, valorisés au prix PRE+ ou PRE-."
+  },
+  {
+    "id": "revenue-stacking",
+    "terme": "Revenue Stacking",
+    "definition_sommaire": "Stratégie consistant à cumuler plusieurs sources de revenus pour un même actif de flexibilité (BESS ou effacement).",
+    "analyse_detaillee": "Un BESS peut simultanément optimiser l'autoconsommation d'un client (BTM), participer au Mécanisme de Capacité, et fournir des services système à RTE (FTM). L'enjeu est de hiérarchiser et d'arbitrer entre ces différentes sources de revenus."
+  },
+  {
+    "id": "services-systeme",
+    "terme": "Services Système",
+    "definition_sommaire": "Services rémunérés par RTE pour garantir l'équilibre et la stabilité du réseau électrique en temps réel (fréquence, tension).",
+    "analyse_detaillee": "Ces services visent à maintenir la fréquence (50 Hz) et la tension du réseau. Ils sont hiérarchisés par leur vitesse d'activation: Réserve Primaire (FCR), Secondaire (aFRR) et Tertiaire (mFRR). Ils nécessitent des actifs très réactifs."
+  },
+  {
+    "id": "soc",
+    "terme": "SoC (State of Charge)",
+    "definition_sommaire": "État de charge. Pourcentage de la capacité restante dans une batterie.",
+    "analyse_detaillee": "Le SoC est l'équivalent de la jauge de carburant d'une voiture. Un SoC de 100% signifie que la batterie est pleine, un SoC de 0% qu'elle est vide. Le pilotage d'un BESS consiste à gérer activement son SoC en fonction des opportunités de marché."
+  },
+  {
+    "id": "spv",
+    "terme": "SPV (Special Purpose Vehicle)",
+    "definition_sommaire": "Société de Projet. Entité juridique créée spécifiquement pour détenir et exploiter un ou plusieurs actifs énergétiques.",
+    "analyse_detaillee": "La création d'une SPV permet d'isoler les risques financiers et opérationnels du projet du reste des activités de la société mère. C'est une structure standard dans le financement de projet."
+  },
+  {
+    "id": "tri",
+    "terme": "TRI (Taux de Rentabilité Interne)",
+    "definition_sommaire": "Indicateur financier mesurant la rentabilité d'un investissement. Taux d'actualisation pour lequel la VAN est nulle.",
+    "analyse_detaillee": "Le TRI, exprimé en pourcentage, représente le rendement annuel moyen d'un projet. Un projet est considéré comme viable si son TRI est supérieur au coût du capital (ou à un seuil de rentabilité défini par l'entreprise)."
+  },
+  {
+    "id": "turpe",
+    "terme": "TURPE",
+    "definition_sommaire": "Tarif d'Utilisation des Réseaux Publics d'Électricité, facturé pour l'acheminement de l'électricité.",
+    "analyse_detaillee": "Le TURPE couvre les coûts des réseaux de transport (RTE) et de distribution (Enedis). Sa structure complexe (puissance, énergie, horosaisonnalité) en fait un levier d'optimisation."
+  },
+  {
+    "id": "van",
+    "terme": "VAN (Valeur Actuelle Nette)",
+    "definition_sommaire": "Indicateur financier mesurant la création de valeur d'un projet.",
+    "analyse_detaillee": "La VAN est la somme des flux de trésorerie futurs d'un projet, actualisés à un certain taux (généralement le coût du capital), moins l'investissement initial. Si la VAN est positive, le projet est créateur de valeur."
+  }
+]
