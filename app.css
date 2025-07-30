@@ -11,23 +11,23 @@ body {
 
 /* Conteneur principal de l'application */
 .app-container {
-  display: flex; /* La magie opère ici : aligne les enfants côte à côte */
-  height: 100vh; /* Prend toute la hauteur de l'écran */
+  display: flex;
+  height: 100vh;
 }
 
 /* Colonne de gauche (sidebar) */
 .sidebar {
-  width: 350px; /* Largeur fixe pour la liste */
-  flex-shrink: 0; /* Empêche la colonne de rétrécir */
+  width: 400px; /* Légèrement plus large pour les termes longs */
+  flex-shrink: 0;
   border-right: 1px solid #e2e8f0;
   background-color: #ffffff;
   display: flex;
-  flex-direction: column; /* Organise le header et la liste verticalement */
+  flex-direction: column;
   height: 100vh;
 }
 
 .sidebar-header {
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-bottom: 1px solid #e2e8f0;
 }
 
@@ -41,13 +41,13 @@ body {
   padding: 0.5rem;
   border-radius: 6px;
   border: 1px solid #cbd5e1;
-  box-sizing: border-box; /* Assure que le padding n'augmente pas la largeur */
+  box-sizing: border-box;
 }
 
-/* La liste des termes, la rend défilable */
+/* La liste des termes, rendue défilable */
 .term-list {
-  flex-grow: 1; /* Prend tout l'espace vertical restant */
-  overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .term-list ul {
@@ -57,30 +57,42 @@ body {
 }
 
 .term-list button {
+  /* Style de base du bouton */
   width: 100%;
-  padding: 1rem;
+  padding: 0.9rem 1.5rem;
   text-align: left;
   background: none;
   border: none;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #f1f5f9; /* Bordure plus légère */
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: #334155;
+  
+  /* Préparation pour l'animation et le style de sélection */
+  border-left: 4px solid transparent; 
+  transition: all 0.2s ease-in-out;
 }
 
+/* Style au survol de la souris */
 .term-list button:hover {
   background-color: #f8fafc;
 }
 
 /* Style pour le bouton du terme sélectionné */
 .term-list button.selected {
-  background-color: #2563eb;
-  color: white;
-  font-weight: bold;
+  background-color: #f8fafc; /* Fond très léger */
+  color: #1e293b;
+  font-weight: 600; /* Texte en gras */
+  border-left: 4px solid #2563eb; /* Bordure bleue à gauche */
 }
 
 /* Colonne de droite (contenu principal) */
 .main-content {
-  flex-grow: 1; /* Prend tout l'espace horizontal restant */
-  padding: 2rem;
-  overflow-y: auto; /* Ajoute une barre de défilement si le contenu est trop long */
+  flex-grow: 1;
+  padding: 2rem 3rem;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  margin-top: 0;
 }
