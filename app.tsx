@@ -13,7 +13,8 @@ function App() {
             <h2>Dictionnaire</h2>
             <input type="text" placeholder="Rechercher un terme..." />
          </div>
-         <TermList
+        <TermList
+   terms={termsData}
    onSelectTerm={setSelectedTerm}
    selectedTermId={selectedTerm ? selectedTerm.id : null}
 />
