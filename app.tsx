@@ -14,7 +14,6 @@ function App() {
             <input type="text" placeholder="Rechercher un terme..." />
          </div>
          <TermList
-   terms={termsData}
    onSelectTerm={setSelectedTerm}
    selectedTermId={selectedTerm ? selectedTerm.id : null}
 />
