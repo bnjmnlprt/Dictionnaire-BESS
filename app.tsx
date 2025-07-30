@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TermList from './components/TermList.tsx';
 import DefinitionCard from './components/DefinitionCard.tsx';
 import termsData from './dictionnaire.json';
+import './App.css';
 
 function App() {
   const [selectedTerm, setSelectedTerm] = useState(termsData[0]);
