@@ -14,9 +14,10 @@ function App() {
             <input type="text" placeholder="Rechercher un terme..." />
          </div>
          <TermList
-            onSelectTerm={setSelectedTerm}
-            selectedTermId={selectedTerm ? selectedTerm.id : null}
-         />
+   terms={termsData}
+   onSelectTerm={setSelectedTerm}
+   selectedTermId={selectedTerm ? selectedTerm.id : null}
+/>
       </div>
       <div className="main-content">
         <DefinitionCard term={selectedTerm} />
